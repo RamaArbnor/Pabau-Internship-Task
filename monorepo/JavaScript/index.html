@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+
+        <style>
+            #form{
+                display: flex;
+                flex-flow: column;
+                width: 20%;
+
+            }
+
+            .intern-container{
+                order: 1;
+            }
+        </style>
+
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <!-- Form to have four checkbox inputs with values: Internship, Pabau, Employment, Career -->
+            <div id="form">
+
+                <div class="intern-container" id="container">
+                    <label for="internBox">Internship</label>
+                    <input type="checkbox" name="Internship" id="internBox" > 
+                </div>
+                
+                <div class="pabau-container" id="container">
+                    <label for="pabauBox">Pabau</label>
+                    <input type="checkbox" name="Pabau" id="pabauBox" > 
+                </div>
+
+                <div class="employment-container" id="container">
+                    <label for="employmentBox">Employment</label>
+                    <input type="checkbox" name="Employment" id="employmentBox" >
+                </div>
+
+                <div class="career-container" id="container">
+                    <label for="careerBox">Career</label>
+                    <input type="checkbox" name="Career" id="careerBox" > 
+                </div>
+
+            </div>
+
+            <button id="shuffle-button">Shuffle Values</button>
+            <button id="change-button">Change Values</button>
+            <button id="show-button">Show Selected values</button>
+            
+            <h3 id="results">The Selected are : </h3>
+
+        <script src="index.js" async defer></script>
+    </body>
+</html>
